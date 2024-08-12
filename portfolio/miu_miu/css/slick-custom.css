@@ -1,0 +1,23 @@
+            .slick-slider,
+            .slick-slide{ margin-bottom: 0 !important;}
+            .slick-current{ background: #be3455 !important;}
+            
+            .slick-arrow{ width: 36px; height: 36px; background: #be3455; z-index: 1; border-radius: 25%; box-shadow: 0 4px 12px -4px rgba(0, 0, 0, .15); }
+            .slick-arrow:focus, 
+            .slick-arrow:hover{ background: #ffc7d1; box-shadow: 0 3px 9px -3px rgba(190, 52, 85, .85);}
+            .slick-arrow:active { box-shadow: 0 1px 3px -1px rgba(192, 52, 85, .1);}
+            .slick-arrow.slick-prev:before,
+            .slick-arrow.slick-next:before{font-family: "Font Awesome 5 Pro"; font-weight: 900; font-size: 18px; }
+            .slick-arrow.slick-prev{}
+            .slick-arrow.slick-prev:before{ content: '\f053'; }
+            .slick-arrow.slick-next{}
+            .slick-arrow.slick-next:before{ content: '\f054'; }
+            
+            ul.slick-dots{ top: calc(100% + 18px); height: 14px; transform: scale(.95); transition: all 150ms ease-out;}
+            ul.slick-dots:hover{ transform: scale(1);}
+            ul.slick-dots li{ width: 14px; height: 14px; margin: 0 9; vertical-align: top; box-shadow: inset 0 0 0 3px rgba(190, 52, 85, .65); border-radius: 50%; transition: inherit;}
+            ul.slick-dots li:hover{ box-shadow: inset 0 0 0 7px rgba(255, 199, 209, 1);}
+            ul.slick-dots li.slick-active{ box-shadow: inset 0 0 0 7px rgba(190, 52, 85, 1);}
+            ul.slick-dots li button{ display: none;} 
+            /* #be3455 = (190, 52, 85) / #ffc7d1 = (255, 199, 209) */
+      

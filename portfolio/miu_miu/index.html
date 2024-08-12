@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=1236, user-scalable=yes, target-densityDpi=medium-dpi">
+        <meta name="format-detection" content="telephone=no">
+        <title>miumiu</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/fontawesome_all.min.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="css/slick-custom.css">
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/btns.css">
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript">
+            function scroll_effect(sc_y){
+                if(sc_y <= 0){
+                    $("#header.section_00").removeClass("scrolled");
+                }else{
+                    $("#header.section_00").addClass("scrolled");
+                }
+            }
+            
+            /*실시간 스크롤값 추출*/
+            let ticking = false;
+            document.addEventListener('scroll', function(e) {
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        scroll_effect(window.scrollY);
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+            
+            $(function(){
+                $('.about_bg').slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 500,
+                    fade: true,
+                    cssEase: 'linear',
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 2500,
+                });
+                $('.one_con_img').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+                    asNavFor: '.slick_btn',
+                });
+                $('.slick_btn').slick({
+                    dots: false,
+                    infinite: true,
+                    arrows: false,
+                    autoplaySpeed: 2500,
+                    slidesToScroll: 1,   
+                    slidesToShow: 5,                    
+                    focusOnSelect: true,
+                    asNavFor: '.one_con_img'
+                });
+                $('.main_store').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+                    asNavFor: '.store_list',
+                });
+                $(".store_list").slick({ 
+                    arrows: true,       
+                    dots: true,        
+                    infinite: true,      
+                    slidesToScroll: 1,   
+                    slidesToShow: 4,     
+                    swipeToSlide: false,
+                    asNavFor: '.main_store',
+                    focusOnSelect: true
+                });
+            });
+        </script>
+
+    </head>
+     <!--<body class="ready"><!--위에서부터 차례대로 만들기-->
+    <body>
+       <!--<div class="loading_cover"></div>-->
+        <div class="wrap">
+            <div id="header" class="sections section_00">
+                <div class="width_con">
+                    <a class="btn_home" href="index.html"><img src="img/bi_miumiu_logo.svg" title="Miu Miu" alt="Home"></a>
+                    <div class="nav_con">
+                        <ul class="nav">
+                            <li><a href="#visual">Home</a></li><!--
+                         --><li><a href="#ambassador">Ambassador</a></li><!--
+                         --><li><a href="#about">About Us</a></li><!--
+                         --><li><a href="#ceo">Founder</a></li><!--
+                         --><li><a href="#history">Heritage</a></li><!--
+                         --><li><a href="#season">Arcadie</a></li><!--
+                         --><li><a href="#product">Goods</a></li><!--
+                         --><li><a href="#event">Events</a></li><!--
+                         --><li><a href="#store">Store</a></li><!--
+                         --><li><a href="#map">Contact Us</a></li>
+                        </ul>
+                        <ul class="nav_customer">
+                            <li><a href="javascript:;">Search</a></li><!--
+                         --><li><a href="https://www.miumiu.com/">Official Web Site</a></li><!--
+                         --><li><a href="javascript:;">Eng</a></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="visual" class="sections section_01"><!--video-->
+                <iframe class="video" src="https://www.youtube.com/embed/UX__fxMpMOc?start=4&amp;autoplay=1&amp;rel=0&amp;mute=1&amp;showinfo=0&amp;controls=0&amp;loop=1&amp;disablekb=1" frameborder="0"></iframe>
+                <img src="img/ratio_16x9.png" class="ratio">
+                <div class="width_con">
+                    <div class="title_con center white">
+                        <h3>Ready to wear</h3>
+                        <h1>Miu Miu<img class="full_image" src="img/img_header_logo.svg" title="Miu Miu" alt="Miu Miu"></h1>
+                        <h4>Sensual and Intellectual</h4>
+                        <h5>By transforming fashion into a mental state and by utilizing change<br>as the key element to build the world, Miu Miu achieves<br>a characterful result boasting sensual as well as intellectual flair</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="ambassador" class="sections section_02"><!--ambassador-->
+                <div class="width_con">
+                    <ul class="v_con two_con">
+                        <li class="cells box">
+                            <img class="full_image" src="img/img_absd_yal.jpg">
+                        </li><!--
+                     --><li class="cells">
+                            <div class="title_con">
+                                <h3>Ambassador</h3>
+                                <h2>Yoona Lim</h2>
+                                <h4>In 2020, She was co-selected as<br>the first Miu Miu girl in Korea</h4>
+                                <h5>Until 2020, the term "MIU MIU Girl,"<br>which means Ambassador, was officially used from 2021</h5>
+                            </div>
+                            <div class="btn_con">
+                                <a class="btn btn_a btn_icon" href="javascript:;"><span>MORE VIEW</span><i class="far fa-chevron-right"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="about" class="sections section_03"><!--about us-->
+                    <div class="about_bg">
+                        <img class="full_image" src="img/bg_about_01.jpg";>
+                        <img class="full_image" src="img/bg_about_02.jpg";>
+                        <img class="full_image" src="img/bg_about_03.jpg";>
+                    </div>
+                    <div class="width_con">
+                    <div class="title_con center light nobt">
+                        <h3>Introduction</h3>
+                        <h2>About us</h2>
+                        <h4>Miu Miu is the most unrestrained portrayal of Miuccia Prada’s creativity<br>Intentionally far from traditional aesthetic imagery, the brand conveys<br>the essence of an emancipated and conscious woman.</h4>
+                        <h5>Miu Miu’s strength fluctuates between naif spirit and iridescent subversion and<br>it illustrates the most rebellious and seductive core of contemporary femininity.</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="mini_banner" class="sections section_04"><!--banner-->
+                <div class="width_con">
+                    <div class="title_con center nobt nobar">
+                        <h4>“Per 10 anni ho indossato abiti vintage. Mi sono sempre chiesta perche li amassi cosi tanto e penso che dipenda dalla loro storia.<br>Ogni abito rappresenta una persona, un pezzo di una vita. Per me,<br>il passato ha sempre avuto un valore incredibile perche ogni cosa che impariamo proviene da li”.<br><br>Miuccia Bianchi Prada</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="ceo" class="sections section_05"><!--ceo-->
+                <div class="width_con">
+                    <ul class="v_con two_con">
+                        <li class="cells box">
+                            <div class="title_con">
+                                <h3>Miuccia Prada Bianchi</h3>
+                                <h2>Founder</h2>
+                                <h4>The head designer of Prada &amp;<br>the founder of its subsidiary Miu Miu.</h4>
+                                <h5>Miuccia Prada is Executive Director of the Company as well as Prada<br>Co-Creative Director along with Raf Simons<br>and Miu Miu Creative Director.<br><br>She served as Chairperson of the Board from 2003 to 2014 and later on<br>as Co-Chief Executive Officer, along her husband Patrizio Bertelli,<br>until 26th January 2023.<br><br>After obtaining a degree in Political Science<br>from Milan University, Miuccia Prada began designing for<br>the exclusive family business, founded by her grandfather in 1913.<br><br>At the end of the ‘70s she formed a partnership with Patrizio Bertelli,<br>an entrepreneur and owner of two high quality leather goods companies<br>at the time.<br><br>Miuccia Prada has received several awards for her original vision,<br>innovation, and contribution to international fashion. In 2000,<br>she received an Honorary Doctorate from the Royal College of Art<br>in London.<br><br>In 2006, Ms. Prada was named Officier dans l’Ordre des Arts et des Lettres<br>by the French Ministry of Culture.<br><br>In 2015, she was granted the title of Knight of the Grand Cross,<br>the highest Order of Merit of the Italian Republic, in recognition of<br>her international success and contribution on behalf of Italy<br>to the fields of creativity, fashion and style.</h5>
+                            </div>
+                        </li>
+                        <li class="cells"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="history" class="sections section_06"><!--history-->
+                <div class="width_con">
+                    <div class="title_con center">
+                        <h3>History of Miu Miu</h3>
+                        <h2>Heritage</h2>
+                        <h4>Miu Miu Women’s Tales &amp; Storys</h4>
+                        <h5>You can see the roads that Miu Miu walked.<br>And We know the paths we're going to take.</h5>
+                    </div>
+                    <ul class="v_con one_con">
+                        <li class="cells box">
+                            <div class="one_con_img">
+                                <div class="history_img">
+                                    <img class="full_image" src="img/img_history_1993.jpg";>
+                                    <div class="title">
+                                    <h4>1993<br>The Casual &amp; Sophisticated Universe<br>Of Miu Miu</h4>
+                                    <h5>Miuccia Prada’s creative inspiration leads her to the creation<br>of a new brand, characterised by a strong, uncontrived,<br>at times, provocative personality.<br>Miu Miu, expression of the most sophisticated, independent<br>and unconventional femininity was born.</h5>
+                                    </div>
+                                </div>
+                                <div class="history_img">
+                                    <img class="full_image" src="img/img_history_2003.jpg";>
+                                    <div class="title">
+                                    <h4>2003<br>Prada and Miu Miu Eyewear</h4>
+                                    <h5>Prada Group launches Prada and Miu Miu <br>first sunglasses and optical frame collections.<br>Since 2003 the Group’s eyewear is licensed <br>to Italian world leading manufacturer Luxottica.</h5>
+                                    </div>
+                                </div>
+                                <div class="history_img">
+                                    <img class="full_image" src="img/img_history_2006.jpg";>
+                                    <div class="title">
+                                    <h4>2006<br>Miu Miu shows its collection in Paris</h4>
+                                    <h5>After the New York and London experiences,<br> Miu Miu moves its runway shows to Paris.
+                                    </h5>
+                                    </div>
+                                </div>
+                                <div class="history_img">
+                                    <img class="full_image" src="img/img_history_2011.jpg";>
+                                    <div class="title black">
+                                    <h4>2011<br>Miu Miu Women's Tales</h4>
+                                    <h5>Miu Miu’s Women’s Tales project was launched in collaboration<br> with Venice Film Festival within the “Authors’ Days”.
+                                    </h5>
+                                    </div>
+                                </div>
+                                <div class="history_img">
+                                    <img class="full_image" src="img/img_history_2013.jpg";>
+                                    <div class="title">
+                                    <h4>2013<br>Miu Miu Fragrances</h4>
+                                    <h5>The Prada Group signs an agreement with Coty for the creation,<br>production and marketing of Miu Miu perfumes.<br>The first fragrance was launched in 2015.</h5>
+                                    </div>
+                                </div>
+                                <div class="history_img">
+                                    <img class="full_image" src="img/img_history_2018.jpg";>
+                                    <div class="title">
+                                    <h4>2018<br>Valvigna, Between Architecture &amp; Nature</h4>
+                                    <h5>On June 8th, Prada Group presented its industrial headquarters <br>in Valvigna, Tuscany, on the occasion of the ‘Prada Architecture <br>by Guido Canali’ book publication.</h5>
+                                    </div>
+                                </div>
+                                <div class="history_img">
+                                    <img class="full_image" src="img/img_history_2019.jpg";>
+                                    <div class="title">
+                                    <h4>2019<br>Fur free commitment</h4>
+                                    <h5>The Prada Group announced Fur Free policy for all its brands,<br> starting from the Spring/Summer 2020 Women’s collections.<br>In collaboration with the Fur Free Alliance (FFA) <br>- a coalition of more than 50 animal protection organizations in over 40 countries - <br>Prada Group announcement was one of its bold engagements <br>toward more sustainable practices and business model.</h5>
+                                    </div>
+                                </div>
+                                <div class="history_img">
+                                    <img class="full_image" src="img/img_history_2020.jpg";>
+                                    <div class="title">
+                                    <h4>2020<br>MALIKA SAVELL: Chief Diversity, Equity &amp; Inclusion officer <br>For Prada North America</h4>
+                                    <h5>On October 21st, the Prada Group welcomed Malika Savell <br>as Chief Diversity, Equity and Inclusion Officer for Prada North America. </h5>
+                                    </div>
+                                </div>
+                                <div class="history_img">
+                                    <img class="full_image" src="img/img_history_2021.jpg";>
+                                    <div class="title black">
+                                    <h4>2021<br>Diversity, Equity &amp; Inclusion - 2021 Initiatives</h4>
+                                    <h5>The Prada Group further deepens its commitment to Diversity, Equity and Inclusion <br>with substantial investments in talent <br>and educational advancement programmes. <br>In an effort to increase representation within the Company and the fashion industry as a whole, <br>the Group has established internship and mentorship programmes <br>and launched a series of initiatives in partnership with FIT, UNFPA and Dorchester Industries, founded by Diversity <br>and Inclusion Advisory Council Co-Chair Theaster Gates.</h5>
+                                    </div>
+                                </div>
+                                <div class="history_img">
+                                    <img class="full_image" src="img/img_history_2022.jpg";>
+                                    <div class="title">
+                                    <h4>2022<br>Sea Beyond 2022</h4>
+                                    <h5>Prada Group and Unesco-IOC Support the Digitization of the MUMA<br> - MILAZZO SEA MUSEUM For the World Ocean Day the Prada Group,<br> in partnership with UNESCO-IOC, announced that the “MuMa” <br>- Milazzo Sea Museum has completed the digitization <br>of its spaces and contents.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_con center slick_btn">
+                                <a class="btn btn_c medium" href="javascript:;"><span>1993</span></a><!--
+                             --><a class="btn btn_c medium" href="javascript:;"><span>2003</span></a><!--
+                             --><a class="btn btn_c medium" href="javascript:;"><span>2006</span></a><!--
+                             --><a class="btn btn_c medium" href="javascript:;"><span>2011</span></a><!--
+                             --><a class="btn btn_c medium" href="javascript:;"><span>2013</span></a><!--
+                             --><a class="btn btn_c medium" href="javascript:;"><span>2018</span></a><!--
+                             --><a class="btn btn_c medium" href="javascript:;"><span>2019</span></a><!--
+                             --><a class="btn btn_c medium" href="javascript:;"><span>2020</span></a><!--
+                             --><a class="btn btn_c medium" href="javascript:;"><span>2021</span></a><!--
+                             --><a class="btn btn_c medium" href="javascript:;"><span>2022</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="season" class="sections section_07"><!--season-->
+                <div class="fixed_bg"><img src="img/bg_season.jpg"></div>
+                <div class="width_con">
+                    <div class="title_con light nobt">
+                        <h3>Symbolical matelasse</h3>
+                        <h2>Arcadie</h2>
+                        <h4>Reinterpretation of an iconic design in a glamorous key</h4>
+                        <h5>A luxurious matelasse motif reinterprets<br>the classic silhouette of the top-handle bag through<br>its three-dimensional, textured, and extremely sophisticated effect.</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="product" class="sections section_08"><!--product-->
+                <div class="width_con">
+                    <div class="title_con center">
+                        <h3>Miu Miu Collection</h3>
+                        <h2>Product</h2>
+                        <h4>Outpost for the most<br>refinded feminity</h4>
+                        <h5>Renowned for its avant-garde, youthful, and provocative designs,<br>Miu Miu is one of the most successful high-end fashion labels in the world.<br>Steadily growing and evolving since its establishment in 1993,<br>Miu Miu considers itself “workshop of new design expressions<br>that play with the kaleidoscopic nature of fashion”</h5>
+                    </div>
+                    
+                    <ul class="v_con six_con">
+                        <li class="cells box c_btn">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_product_bags.jpg">
+                                <div class="title">
+                                    <h4>Bags</h4>
+                                </div>
+                            </a>
+                        </li><!--
+                     --><li class="cells box c_btn">
+                           <a href="javascript:;">
+                                <img class="full_image" src="img/img_product_clothes.jpg">
+                                <div class="title">
+                                    <h4>Clothes</h4>
+                                </div>
+                           </a>
+                       </li><!--
+                    --><li class="cells box c_btn">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_product_shoes.jpg">
+                                <div class="title">
+                                    <h4>Shoes</h4>
+                                </div>
+                            </a>
+                        </li><!--
+                     --><li class="cells box c_btn">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_product_wallets.jpg">
+                                <div class="title">
+                                    <h4>Wallets</h4>
+                                </div>
+                            </a>
+                        </li><!--
+                     --><li class="cells box c_btn">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_product_jewels.jpg">
+                                <div class="title">
+                                    <h4>Jewels</h4>
+                                </div>
+                            </a>
+                        </li><!--
+                     --><li class="cells box c_btn">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_product_accessories.jpg">
+                                <div class="title">
+                                    <h4>Accessories</h4>
+                                </div>
+                                
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_con center">
+                        <a class="btn btn_a btn_icon" href="javascript:;"><span>Go TO SHOP</span><i class="far fa-store"></i></a><!--
+                         --><a class="btn btn_b btn_icon" href="javascript:;"><span>More View</span><i class="far fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="event" class="sections section_09"><!--event-->
+                <div class="width_con">
+                    <ul class="v_con four_con">
+                        <li class="cells">
+                            <div class="title_con light">
+                                <h3>What's new<br>events</h3>
+                                <h2>Miu Miu<br>club</h2>
+                                <h4>The moment you have to focus.</h4>
+                                <h5>Campaigns, New Fragrances,<br>Special Projects and More.</h5>
+                            </div>
+                        </li><!--
+                     --><li class="cells box up">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_event_01.jpg">
+                                <div class="title">
+                                    <h4>Campaigns<br>Miu Miu live!</h4>
+                                    <h5>In the here and now. Future perfect.<br>the notion of movement everywhere and nowhere.</h5>
+                                </div>
+                            </a>  
+                        </li><!--
+                     --><li class="cells box up">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_event_02.jpg">
+                                <div class="title">
+                                    <h4>Frangrances<br>Miu Miu fleur de lait</h4>
+                                    <h5>Captivating sensations and comforting emotions.
+                                    Inspired by the iconic Mango Pomelo Sago dessert.</h5>
+                               </div>
+                            </a>  
+                        </li><!--
+                     --><li class="cells box up">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_event_03.jpg">
+                                <div class="title">
+                                    <h4>Special projects<br>Miu Miu select</h4>
+                                    <h5>Miu Miu Select reaches its fourth edition with a series of appointments celebrating the various aspects of Miu Miu.</h5>
+                                </div>
+                            </a>  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="store" class="sections section_10"><!--store-->
+                <div class="width_con">
+                    <div class="title_con center">
+                        <h3>Miu Miu Global</h3>
+                        <h2>Store</h2>
+                        <h4>It is an offline shop where you can directly see Miu miu’s products.</h4>
+                        <h5>You can find Miu Miu anywhere in the world.<br>Pack your bags and ready up for a spot of shopping in Miu miu.</h5>
+                    </div>
+                    <ul class="v_con one_con">
+                        <li class="cells box">
+                            <div class="main_store">
+                            <div class="title">
+                                <img class="full_image" src="img/img_seoul_main.jpg">
+                                <h4>Seoul</h4>
+                                <h5>1 Rue du Faubourg Saint-Honoré, 75008 Paris</h5>
+                            </div>
+                            <div class="title">
+                                <img class="full_image" src="img/img_shanghai_main.jpg">
+                                <h4>Shanghai</h4>
+                                <h5>1 Rue du Faubourg Saint-Honoré, 75008 Paris</h5>
+                            </div>
+                            <div class="title">
+                                <img class="full_image" src="img/img_paris_main.jpg">
+                                <h4>Paris</h4>
+                                <h5>1 Rue du Faubourg Saint-Honoré, 75008 Paris</h5>
+                            </div>
+                            <div class="title">
+                                <img class="full_image" src="img/img_tokyo_main.jpg">
+                                <h4>Paris</h4>
+                                <h5>1 Rue du Faubourg Saint-Honoré, 75008 Paris</h5>
+                            </div>
+                            <div class="title">
+                                <img class="full_image" src="img/img_hongkong_main.jpg">
+                                <h4>Paris</h4>
+                                <h5>1 Rue du Faubourg Saint-Honoré, 75008 Paris</h5>
+                            </div>
+                            <div class="title">
+                                <img class="full_image" src="img/img_macau_main.jpg">
+                                <h4>Paris</h4>
+                                <h5>1 Rue du Faubourg Saint-Honoré, 75008 Paris</h5>
+                            </div>
+                            <div class="title">
+                                <img class="full_image" src="img/img_newyork_main.jpg">
+                                <h4>Paris</h4>
+                                <h5>1 Rue du Faubourg Saint-Honoré, 75008 Paris</h5>
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="v_con four_con store_list">
+                        <li class="cells box c_btn">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_seoul.jpg">
+                                <div class="title">
+                                    <h4>Seoul</h4>
+                                </div>
+                            </a>
+                        </li><!--
+                     --><li class="cells box c_btn">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_shanghai.jpg">
+                                <div class="title">
+                                    <h4>Shanghai</h4>
+                                </div>
+                            </a>
+                        </li><!--
+                     --><li class="cells box c_btn">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_paris.jpg">
+                                <div class="title">
+                                    <h4>Paris</h4>
+                                </div>
+                            </a>
+                        </li><!--
+                     --><li class="cells box c_btn">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_tokyo.jpg">
+                                <div class="title">
+                                    <h4>Tokyo</h4>
+                                </div>
+                            </a>
+                        </li><!--
+                     --><li class="cells box c_btn">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_hongkong.jpg">
+                                <div class="title">
+                                    <h4>Hong Kong</h4>
+                                </div>
+                            </a>
+                        </li><!--
+                     --><li class="cells box c_btn">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_macau.jpg">
+                                <div class="title">
+                                    <h4>Macau</h4>
+                                </div>
+                            </a>
+                        </li><!--
+                     --><li class="cells box c_btn">
+                            <a href="javascript:;">
+                                <img class="full_image" src="img/img_newyork.jpg">
+                                <div class="title">
+                                    <h4>New York</h4>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="map" class="sections section_11"><!--map-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.018694193682!2d9.194847776751427!3d45.469427333089264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6ba8b48c8a1%3A0xcec1c517cd519e3a!2sMiu%20Miu%20Milano!5e0!3m2!1sen!2skr!4v1692675323128!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="width_con">
+                    <ul class="v_con two_con">
+                        <li class="cells"></li><!--
+                     --><li class="cells box">
+                            <div class="title_con">
+                                <h3>Store location</h3>
+                                <h2>Contact</h2>
+                                <h4>Flagship Store<br>It is an offline shop where you can directly see Miu Miu products</h4>
+                                <h5>Via Sant’andrea, 21, MI 20121 Milano MI, Italy<br>Mon. - Sun. 10:30AM - 7:30PM<br><br>miumiu@miumiu.com<br>prada@prada.com<br><br>Copy phone number:<br>+39 02 7600 1799</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="pins" class="btn btn_a large btn_icon nomg" href="https://goo.gl/maps/GhjGkNd3AwhKnfs56" target="_blank" title="View on Google Map">
+                    <div class="shadow"></div>
+                    <div class="needle"></div>
+                </a>
+            </div>
+            <div id="footer" class="sections section_12">
+                <div class="width_con">
+                    <ul class="v_con four_con">
+                        <li class="cells">                                
+                            <div class="title_con nobar">
+                                <h4 class="one_line">About us</h4>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Store location</h5>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Prada group</h5>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Sustainability</h5>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Fondazione prada</h5>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Work with us</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </li><!--
+                     --><li class="cells">
+                            <div class="title_con nobar">
+                                <h4>Customer<br>service</h4>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Miu miu service</h5>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Contact us</h5>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Faqs</h5>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Returns</h5>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Track your order</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </li><!--
+                     --><li class="cells">
+                            <div class="title_con nobar">
+                                <h4>Legal terms<br>&amp; Conditions</h4>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Legal notice</h5>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Privacy</h5>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Sustainability</h5>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Cookie policy</h5>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="title">
+                                        <h5>Sitemap</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </li><!--
+                     --><li class="cells">
+                            <div class="title_con sns nobar">
+                                <h4 class="one_line">Follow us</h4>
+                                <h5><a href="javascript:;"><img class="full_image" src="img/img_footer_facebook.png"></a></h5>
+                                <h5><a href="javascript:;"><img class="full_image" src="img/img_footer_insta.png"></a></h5>
+                                <h5><a href="javascript:;"><img class="full_image" src="img/img_footer_youtube.png"></a></h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="title_con nobt">
+                        <h5>&copy; Prada 2005-2023</h5>
+                    </div>
+                    <img class="full_image last_img" src="img/img_footer_logo.svg">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

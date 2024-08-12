@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.btn_con {  margin: var(--mrgn) calc(var(--mrgn-half) * -.5) calc(var(--mrgn-half) * -1);}
+.btn_con.center { text-align: center;}
+
+.btn { position: relative; font-family: 'Poppins'; display: inline-block; margin: 0 calc(var(--mrgn-half) / 2) var(--mrgn-half); vertical-align: top; width: 170px; height: 40px; line-height: 40px; text-align: center; border-radius: 20px; font-size: 14px; font-weight: 500; text-decoration: none; transition: all 100ms linear;}
+
+
+
+.btn.btn_icon { text-align: left; text-indent: 27px;}
+.btn.btn_icon i { position: absolute; top: 0; right: 27px; height: inherit; line-height: inherit;}
+
+
+
+
+.btn.btn_w { color: #fff; box-shadow: inset 0 0 0 2px #fff, 0 4px 12px -4px rgba(0, 0, 0, .15); font-weight: 600; }
+.btn.btn_w:hover { color: #de2c38; background: #fff; box-shadow: inset 0 0 0 2px #fff, 0 3px 9px -3px rgba(255, 255, 255, .85); }
+.btn.btn_w:active { box-shadow: inset 0 0 0 2px #de2c38, 0 1px 3px -1px rgba(0, 112, 66, .1); transform: scale(.975);}
+.btn.btn_w i { color: #fff; transition: all 100ms linear;}
+.btn.btn_w:hover i,
+.btn.btn_w:active i { color: #de2c38;}
+
+.btn.btn_left,
+.btn.btn_right{width: 40px; border-radius: 50%; background: #fff; color: #111;}
+
+.btn.btn_left:hover,
+.btn.btn_right:hover{background: #de2c38;}
+
+
+.btn.btn_left i,
+.btn.btn_right i{font-size: 35px; position: absolute; top:10px; left:15px; }
+
+.btn.btn_left i{ top:2px; left:10px; }
+.btn.btn_right i{ top:2px; left:12px; }
+
+
+
+
